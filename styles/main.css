@@ -1,0 +1,158 @@
+html,
+body {
+  margin                   : 0;
+  padding                  : 0;
+  width                    : 100%;
+  height                   : 100%;
+  font-size                : 100%;
+  -webkit-text-size-adjust : 100%;
+  -moz-text-size-adjust    : 100%;
+  -ms-text-size-adjust     : 100%;
+  overflow                 : auto;
+}
+
+body * {
+  outline : none;
+}
+
+.configurable-application--loading {
+  text-align : center;
+  display    : block;
+  height     : 100%;
+  width      : 100%;
+  overflow   : hidden;
+  background : #fff url(../assets/loader-ie9.gif) no-repeat center center;
+}
+
+.top-nav {
+  background : #0079c1;
+}
+
+.top-nav * {
+  color : #fff !important;
+}
+
+.top-nav .dropdown-menu * {
+  color : #444 !important;
+}
+
+.top-nav-link:hover,
+.top-nav-link:focus {
+  border-bottom-color : #fff;
+}
+
+.configurable-application__view-container {
+  margin     : 0;
+  padding    : 0;
+  height     : calc(100vh - 100px) !important;
+  box-shadow : 0 1px 2px rgba(0, 0, 0, 0.3);
+}
+
+#user-thumb-node {
+  height         : 36px;
+  border-radius  : 18px;
+  vertical-align : middle;
+}
+
+.esri-print__container {
+  max-height : unset;
+}
+
+.esri-layer-list__item-actions-menu-item:hover,
+.esri-layer-list__item-actions-menu-item--active,
+.esri-layer-list__item-actions-menu-item--active:hover {
+  color            : #0079c1 !important;
+  background-color : transparent !important;
+}
+
+.drawer-nav {
+  width : 350px;
+}
+
+.panel-toggle {
+  z-index    : 99;
+  position   : absolute;
+  cursor     : pointer;
+  top        : calc(50% - 15px);
+  left       : 0;
+  padding    : 4px 0;
+  background : #fff;
+}
+
+.panel-toggle:hover {
+  color : #0079c1;
+}
+
+.view-loading-node {
+  box-shadow : none !important;
+}
+
+.view-loading-node .loader-text {
+  padding-top : 3em !important;
+}
+
+#notifications-node {
+  position : sticky;
+  left     : 5px;
+  bottom   : 5px;
+}
+
+#notifications-node .alert {
+  opacity : 0.9;
+}
+
+.elevation-slider {
+  top               : -50px;
+  right             : -50px;
+  width             : 150px;
+  padding           : 10px !important;
+  background        : #fff !important;
+  transform         : rotate(270deg);
+  -ms-transform     : rotate(270deg);
+  -moz-transform    : rotate(270deg);
+  -webkit-transform : rotate(270deg);
+  box-shadow        : 0 1px 2px rgba(0, 0, 0, 0.3);
+}
+
+#left-panel {
+  height         : calc(100vh - 100px) !important;
+  display        : flex;
+  flex-direction : column;
+}
+
+#selection-panel {
+  flex-shrink    : 1;
+  flex-grow      : 1;
+  display        : flex;
+  flex-direction : column;
+}
+
+#selection-options {
+  flex-shrink : 0;
+  flex-grow   : 0;
+}
+
+#selection-list {
+  flex-shrink    : 1;
+  flex-grow      : 1;
+  display        : flex;
+  flex-direction : column;
+}
+
+#data-list {
+  flex-shrink : 1;
+  flex-grow   : 0;
+  overflow    : auto;
+}
+
+#data-list:empty {
+  text-align  : center;
+  padding-top : 2rem;
+  font-size   : 2em;
+  font-style  : italic;
+  color       : #ccc;
+}
+
+#data-list:empty:after {
+  content : "No Selection";
+}
